@@ -1,0 +1,25 @@
+<div id="contact" class="content-section">
+  <div class="container">
+    <div class="contact-wrapper">
+      <div class="contact-rigth">
+        <h2>Login</h2>
+        <div class="w-form">
+          <form id="email-form" name="email-form" method="get">
+            <label for="login">Login</label>
+            <input class="input w-input" maxlength="256" name="login" placeholder="Insira seu e-mail" type="text"
+              id="login" [(ngModel)]="login">
+
+            <label for="password">Senha</label>
+            <input class="input w-input" maxlength="256" name="password" placeholder="Insira sua senha" type="password"
+              id="password" [(ngModel)]="password">
+
+            <input type="submit" class="btn w-button" value="Login" (click)="loginClick()">
+          </form>
+          <div class="error w-form-fail" style="display: none;">
+            <div>Falha ao logar.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

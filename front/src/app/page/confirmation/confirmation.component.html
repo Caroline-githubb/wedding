@@ -1,0 +1,55 @@
+<div id="contact" class="content-section">
+  <div class="container">
+    <div class="contact-wrapper">
+      <div class="contact-rigth">
+        <h2>Confirmação de presença</h2>
+        <div class="w-form">
+          <form id="email-form" name="email-form" method="get">
+            <label for="full_name">Nome completo</label>
+            <input class="input w-input" maxlength="256" name="full_name" placeholder="Insira seu nome completo"
+              type="text" id="full_name" [(ngModel)]="fullName">
+
+            <label for="answer">Você irá ao evento</label>
+            <div>
+              <span>
+                <input class="input" name="answer" type="radio" id="answer_yes" [(ngModel)]="answer" [value]="true">
+                sim
+              </span>
+              <span>
+                <input class="input" name="answer" type="radio" id="answer_no" [(ngModel)]="answer" [value]="false">
+                não
+              </span>
+            </div>
+
+            <div>
+              <label for="answer">Quantidade de adultos incluindo você</label>
+              <select [(ngModel)]="adultQuantity" name="adult_quantity">
+                <option *ngFor="let value of adultItens" [ngValue]="value">{{ value }}</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="answer">Quantidade de crianças</label>
+              <select [(ngModel)]="childQuantity" name="child_quantity">
+                <option *ngFor="let value of childItens" [ngValue]="value">{{ value }}</option>
+              </select>
+            </div>
+
+            <label for="email">E-mail</label>
+            <input class="input w-input" maxlength="256" name="email" placeholder="exemplo@email.com" type="text"
+              id="email" [(ngModel)]="email">
+
+            <label for="phone">Telefone para contato</label>
+            <input class="input w-input" maxlength="256" name="phone" placeholder="(16) 99999-9999" type="text"
+              id="phone" [(ngModel)]="phone">
+
+            <label for="obs">Observações</label>
+            <textarea class="input w-input" name="obs" id="obs" [(ngModel)]="obs"></textarea>
+
+            <input type="submit" class="btn w-button" value="Enviar" (click)="sendClick()">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
