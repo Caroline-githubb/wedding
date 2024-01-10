@@ -28,11 +28,23 @@
               </select>
             </div>
 
+            <div *ngFor="let item of initNewArray(adultQuantity - 1); let i=index">
+              <label [for]="'adultName' + (i + 2)">Adulto {{ i + 2 }}</label>
+              <input class="input w-input" maxlength="256" [name]="'adultName' + (i + 2)"
+                [placeholder]="'Nome completo do adulto ' + (i + 2)" type="text" [(ngModel)]="adultsNames[i]">
+            </div>
+
             <div>
               <label for="answer">Quantidade de crianças</label>
               <select [(ngModel)]="childQuantity" name="child_quantity">
                 <option *ngFor="let value of childItens" [ngValue]="value">{{ value }}</option>
               </select>
+            </div>
+
+            <div *ngFor="let item of initNewArray(childQuantity - 1); let i=index">
+              <label [for]="'childName' + (i + 2)">Criança {{ i + 2 }}</label>
+              <input class="input w-input" maxlength="256" [name]="'childName' + (i + 2)"
+                [placeholder]="'Nome completo da crinaça ' + (i + 2)" type="text" [(ngModel)]="childrenNames[i]">
             </div>
 
             <label for="email">E-mail</label>

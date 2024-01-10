@@ -12,5 +12,7 @@ public class Confirmation {
     public String email;
     public String phone;
     public String obs;
+    public String[] adultsNames;
+    public String[] childrenNames;
 
 }
