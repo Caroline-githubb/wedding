@@ -36,13 +36,11 @@ export class ConfirmationComponent {
     this.weddingService.confirmInvite({
       fullName: this.fullName,
       answer: this.answer,
-      adultQuantity: this.adultQuantity,
-      childQuantity: this.childQuantity,
       email: this.email,
       phone: this.phone,
       obs: this.obs,
-      adultsNames: this.adultsNames.filter((x, i) => i < this.adultQuantity + 1),
-      childrenNames: this.childrenNames.filter((x, i) => i < this.childQuantity + 1)
+      adultsNames: this.adultsNames.filter((x, i) => i < this.adultQuantity - 1),
+      childrenNames: this.childrenNames.filter((x, i) => i < this.childQuantity - 1)
     }).subscribe({
       complete: () => {
         console.log("sucesso");
