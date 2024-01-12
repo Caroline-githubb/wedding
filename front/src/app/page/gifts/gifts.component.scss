@@ -1,0 +1,8 @@
+@use 'materialize-css' as *;
+
+.item {
+  @extend .col;
+  @extend .l4;
+  // @extend .m6;
+  // @extend .s12;
+}

@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col l7 s12">
+    <h3 class="header">Resumo da Compra</h3>
+    <div>
+      <span >Valor Total dos Presentes</span>
+      <span class="value">R$ {{ value }}</span>
+    </div>
+    <div>
+      <span>Total</span>
+      <span class="value total">R$ {{ total }}</span>
+    </div>
+  </div>
+  <div class="col l5 s12">
+    <span>Deixe sua mensagem de carinho</span>
+
+    <form class="row">
+      <div class="input-field col s12">
+        <input placeholder="Insira seu nome" id="name" name="name" type="text" class="validate" [(ngModel)]="gift.name">
+        <label for="name">Nome</label>
+      </div>
+      <div class="input-field col s12">
+        <textarea placeholder="Deixe uma mensagem para os noivos" id="message" name="message" type="text" class="materialize-textarea" [(ngModel)]="gift.message"></textarea>
+        <label for="message">Personalize a sua mensagem</label>
+      </div>
+    </form>
+  </div>
+</div>

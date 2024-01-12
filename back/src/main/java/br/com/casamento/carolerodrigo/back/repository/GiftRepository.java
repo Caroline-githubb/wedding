@@ -4,6 +4,5 @@ import br.com.casamento.carolerodrigo.back.model.Gift;
 
 public interface GiftRepository {
 
-    Gift[] findAllAvailable();
-
+    Gift save(Gift gift);
 }

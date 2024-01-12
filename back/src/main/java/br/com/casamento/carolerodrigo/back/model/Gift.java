@@ -1,13 +1,18 @@
 package br.com.casamento.carolerodrigo.back.model;
 
-import lombok.Builder;
 import lombok.Data;
 
+import java.util.UUID;
+
 @Data
-@Builder
 public class Gift {
 
-    private String name;
-    private double value;
+    UUID id;
+    Present present;
+    String name;
+    String message;
+    String mercado_pago_preference;
+    String status;
+
 
 }

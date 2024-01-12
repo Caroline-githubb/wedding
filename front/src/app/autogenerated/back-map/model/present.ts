@@ -9,13 +9,8 @@
  * https://github.com/swagger-api/swagger-codegen.git
  * Do not edit the class manually.
  */
-import { Present } from './present';
 
-export interface Gift { 
-    id?: string;
-    present?: Present;
+export interface Present { 
     name?: string;
-    message?: string;
-    mercadoPagoPreference?: string;
-    status?: string;
+    value?: number;
 }

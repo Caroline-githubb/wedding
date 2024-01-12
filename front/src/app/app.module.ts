@@ -17,6 +17,9 @@ import { FormsModule } from '@angular/forms';
 import { JwtModule } from '@auth0/angular-jwt';
 import { PaymentComponent } from './page/payment/payment.component';
 import { ConfirmationComponent } from './page/confirmation/confirmation.component';
+import { ModalDirective } from './directive/modal.directive';
+import { GiftResumeComponent } from './page/gifts/gift-resume/gift-resume.component';
+import { MercadoPagoCheckoutProComponent } from './component/mercado-pago-checkout-pro/mercado-pago-checkout-pro.component';
 
 export function tokenGetter() {
   return localStorage.getItem("access_token");
@@ -33,7 +36,10 @@ export function tokenGetter() {
     AdminComponent,
     LoginComponent,
     PaymentComponent,
-    ConfirmationComponent
+    ConfirmationComponent,
+    ModalDirective,
+    GiftResumeComponent,
+    MercadoPagoCheckoutProComponent
   ],
   imports: [
     BrowserModule,
