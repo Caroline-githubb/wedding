@@ -1,3 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "materialize-css";
+html{
+    height: 100%;
+    font-size: 100%;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-weight: 300;
+    -webkit-text-size-adjust: 100%;
+}
+
+html, root:root{
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+}
+
+
+body {
+    background-color: #f6eff6;
+}
+
+#root {
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-weight: 300;
+}
+
+.root{
+    box-sizing: border-box;
+}
+
+// :root {
+//     --animate-duration: 1s;
+//     --animate-delay: 1s;
+//     --animate-repeat: 1;
+// }
+
+
+div, main, html {
+    display: block;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+// div::selection {
+//     color: red;
+//     background: yellow;
+// }
+
+:root {
+    --coupleName: #CDC493;
+    --menu: #F0BDA0;
+    --content: #F0BDA0;
+    --title-text-color: #F0BDA0;
+    --main: #E6E6E6;
+    --body: #21201F;
+    --formBorder: rgba(255,255,255,0.08);
+    --lightBackground: #272625;
+    --darkBackground: #1C1A19;
+    --transparentBackground: rgba(0,0,0,0);
+    --alert: #EF5350;
+    --black: #000000;
+    --white: #ffffff;
+    --error: #ef5350;
+    --base-font-family: 'Montserrat';
+    --menu-font-family: 'Montserrat';
+    --title-font-family: 'Alice';
+    --name-font-family: 'RosansSans-Regular';
+}

@@ -1,18 +1,15 @@
-<header>
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper">
-        <a [routerLink]="['/']" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a [routerLink]="['/']" aria-current="page" class="nav-link w-nav-link w--current">Home</a></li>
-          <li><a [routerLink]="['/wedding']" class="nav-link w-nav-link">Cerimonia</a></li>
-          <li><a [routerLink]="['/reception']" class="nav-link w-nav-link">Recepção</a></li>
-          <li><a [routerLink]="['/confirmation']" class="nav-link w-nav-link">Confirmar Presença</a></li>
-          <li><a [routerLink]="['/gifts']" class="nav-link w-nav-link">Lista de Presentes</a></li>
-          <li><a *ngIf="!IsLogged" [routerLink]="['/login']" class="nav-link w-nav-link">Login</a></li>
-          <li><a *ngIf="IsAdmin" [routerLink]="['/admin']" class="nav-link w-nav-link">Admin</a></li>
-        </ul>
-      </div>
+<header class="header">
+  <div class="header-div">
+    <a [routerLink]="['/']" class="iniciais" href="www.google.com.br"> C & R</a>
+    <nav class="Menu">
+      <ul id="nav-mobile" class="menu-wrapper">
+        <li><a [routerLink]="['/']" aria-current="page" class="menu-item"><b>Home</b></a></li>
+        <li><a [routerLink]="['/wedding']" class="menu-item"><b>Local</b></a></li>
+        <li><a [routerLink]="['/confirmation']" class="menu-item"><b>Confirmar Presença</b></a></li>
+        <li><a [routerLink]="['/gifts']" class="menu-item"><b>Lista de Presentes</b></a></li>
+        <li><a *ngIf="!IsLogged" [routerLink]="['/login']" class="menu-item"><b>Login</b></a></li>
+        <li><a *ngIf="IsAdmin" [routerLink]="['/admin']" class="menu-item"><b>Admin</b></a></li>
+      </ul>
     </nav>
   </div>
 </header>
