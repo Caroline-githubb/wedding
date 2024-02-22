@@ -1,29 +1,21 @@
-<div>teteasdoifjsaiofsa</div>
-<div>teteasdoifjsaiofsa</div>
-<div>teteasdoifjsaiofsa</div>
-<div>teteasdoifjsaiofsa</div>
-<div>teteasdoifjsaiofsa</div>
-<div>teteasdoifjsaiofsa</div>
-
-
-<!-- <div data-testid="Hero" class="hero">
+<div data-testid="Hero" class="hero">
     <div class="foto">
-        <img src="front/src/assets/img/CaroleRodrigo.jpg" class="fotocarolerodrigo">
+        <img src="assets/img/CaroleRodrigo.jpg" class="fotocarolerodrigo">
     </div>
-    <div class="sc-hgAkWD fArgOy">
-        <h1 class="sc-epCdse ihtfFo hero__couple-name notranslate">
+    <div class="nomes">
+        <h1 *ngIf="innerWidth > 430" class="nomeCarolERodrigo">
             <span>Carol</span>
-            <span class="sc-iMyPtP gyMWHt">&amp;</span>
+            <span class="juncao">&</span>
             <span>Rodrigo</span>
         </h1>
-         <h1 class="sc-bpAHVy hWjiTw hero__couple-name-mobile notranslate">
-            <span>C</span>
-            <span class="sc-iMyPtP gyMWHt">&amp;</span>
-            <span>R</span>
-        </h1> -->
-        <!-- <p class="sc-bmILTc JJbzp hero__date">06/04/2024</p> -->
-    <!-- </div>
-</div> --> 
+        <h1 *ngIf="innerWidth <= 430" class="nomeCarolERodrigoMobile">
+          <span>C</span>
+          <span class="juncaoMobile">&</span>
+          <span>R</span>
+        </h1>
+        <p class="hero-date">06/04/2024</p>
+     </div>
+</div>
 
 
 

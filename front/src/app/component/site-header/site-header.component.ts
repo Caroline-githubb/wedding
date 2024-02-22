@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { LoginService } from '../../service/login.service';
 
 @Component({
@@ -18,5 +18,15 @@ export class SiteHeaderComponent {
   constructor(
     private loginService: LoginService
   ) { }
+
+  public innerWidth: any;
+  ngOnInit() {
+    this.innerWidth = window.innerWidth;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+  this.innerWidth = window.innerWidth;
+  }
 
 }

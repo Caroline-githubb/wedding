@@ -2,7 +2,6 @@
     width: 100%;
     position: fixed;
     padding: 0px 15px;
-    min-height: 99px;
     transition: background 0.5s ease 0s;
     z-index: 100;
     display: flex;
@@ -56,18 +55,16 @@ nav {
 
 .menu-wrapper{
     display: flex;
-    position: relative;
 }
 
 ul {
     display: block;
-    list-style-type: disc;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
-}
+ }
 
 .menu-item {
     margin-right: 20px;

@@ -1,8 +1,7 @@
 <header class="header">
   <div class="header-div">
-    <a [routerLink]="['/']" class="iniciais" href="www.google.com.br"> C & R</a>
     <nav class="Menu">
-      <ul id="nav-mobile" class="menu-wrapper">
+      <ul *ngIf="innerWidth > 430" id="nav-mobile" class="menu-wrapper">
         <li><a [routerLink]="['/']" aria-current="page" class="menu-item"><b>Home</b></a></li>
         <li><a [routerLink]="['/wedding']" class="menu-item"><b>Local</b></a></li>
         <li><a [routerLink]="['/confirmation']" class="menu-item"><b>Confirmar Presença</b></a></li>
