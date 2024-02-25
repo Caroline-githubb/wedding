@@ -1,6 +1,9 @@
 <header class="header">
   <div class="header-div">
     <nav class="Menu">
+      <button *ngIf="innerWidth <= 430"  color="#ffffff" (click)="abrirMenu()">
+        <span class="menu-item-mobile"></span>
+      </button>
       <ul *ngIf="innerWidth > 430" id="nav-mobile" class="menu-wrapper">
         <li><a [routerLink]="['/']" aria-current="page" class="menu-item"><b>Home</b></a></li>
         <li><a [routerLink]="['/wedding']" class="menu-item"><b>Local</b></a></li>
@@ -12,3 +15,6 @@
     </nav>
   </div>
 </header>
+<div class="menu off" #menu >
+
+</div>

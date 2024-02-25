@@ -4,7 +4,7 @@ html{
     height: 100%;
     font-size: 100%;
     min-height: 100%;
-    margin: 0px;
+    margin: 0 0;
     padding: 0px;
     overflow-x: hidden;
     font-weight: 300;
@@ -20,6 +20,7 @@ html, root:root{
 
 body {
     background-color: #f6eff6;
+    margin: 0 0;
 }
 
 #root {

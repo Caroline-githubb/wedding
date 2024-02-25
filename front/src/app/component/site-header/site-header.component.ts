@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, ElementRef, HostListener, Renderer2, ViewChild } from '@angular/core';
 import { LoginService } from '../../service/login.service';
 
 @Component({
@@ -8,6 +8,9 @@ import { LoginService } from '../../service/login.service';
 })
 export class SiteHeaderComponent {
 
+  @ViewChild('menu', { read: ElementRef })
+  private menu?: ElementRef;
+
   public get IsAdmin(): boolean {
     return this.loginService.IsAdmin;
   }
@@ -16,7 +19,8 @@ export class SiteHeaderComponent {
   }
 
   constructor(
-    private loginService: LoginService
+    private loginService: LoginService,
+    private renderer2: Renderer2
   ) { }
 
   public innerWidth: any;
@@ -27,6 +31,13 @@ export class SiteHeaderComponent {
   @HostListener('window:resize', ['$event'])
   onResize() {
   this.innerWidth = window.innerWidth;
+  }
+
+  abrirMenu() {
+    if (this.menu?.nativeElement.classList.contains('off')) 
+      this.renderer2.removeClass(this.menu?.nativeElement, "off");
+    else
+      this.renderer2.addClass(this.menu?.nativeElement, "off");
   }
 
 }

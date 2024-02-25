@@ -21,6 +21,7 @@ import { ModalDirective } from './directive/modal.directive';
 import { GiftResumeComponent } from './page/gifts/gift-resume/gift-resume.component';
 import { MercadoPagoCheckoutProComponent } from './component/mercado-pago-checkout-pro/mercado-pago-checkout-pro.component';
 import { LoaddingDirective } from './directive/loadding.directive';
+import { TimerComponent } from './component/timer/timer.component';
 
 export function tokenGetter() {
   return localStorage.getItem("access_token");
@@ -42,6 +43,7 @@ export function tokenGetter() {
     GiftResumeComponent,
     MercadoPagoCheckoutProComponent,
     LoaddingDirective,
+    TimerComponent,
   ],
   imports: [
     BrowserModule,

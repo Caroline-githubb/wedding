@@ -1,0 +1,20 @@
+.countdown {
+    position: relative;
+    padding: 80px 0px;
+    background-color: rgb(231 214 237);
+    z-index: 1;
+}
+
+.countdown-title {
+    font-family: var(--base-font-family);
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 2;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #3a013c;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: 2px;
+}
