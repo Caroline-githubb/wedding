@@ -7,5 +7,31 @@
 <span>Segundos: {{this.restante?.seconds()}}</span> -->
 
 <div class="countdown">
-    <h2 d class="countdown-title">Contagem regressiva para o grande dia</h2>
+    <h2 class="countdown-title">Contagem regressiva para o grande dia</h2>
+    <div class="countdown-saveTheDate">
+      <div>
+        <div class="countdown-saveTheDate-dateInfo">
+          <p class="countdown-Days">{{truncar(this.restante?.asDays())}}</p>
+        </div>
+        <p class="days">Dias</p>
+      </div>
+      <div>
+        <div class="countdown-saveTheDate-dateInfo">
+          <p class="countdown-Days">{{this.restante?.hours()}}</p>
+        </div>
+        <p class="days">Horas</p>
+      </div>
+      <div>
+        <div class="countdown-saveTheDate-dateInfo">
+          <p class="countdown-Days">{{this.restante?.minutes()}}</p>
+        </div>
+        <p class="days">Minutos</p>
+      </div>
+      <div>
+        <div class="countdown-saveTheDate-dateInfo">
+          <p class="countdown-Days">{{this.restante?.seconds()}}</p>
+        </div>
+        <p class="days">Segundos</p>
+      </div>
+    </div>
 </div>

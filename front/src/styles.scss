@@ -1,5 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 
+// Color
+@import "materialize-css/sass/components/color-variables";
+@import "materialize-css/sass/components/color-classes";
+
+// Variables;
+@import "materialize-css/sass/components/variables";
+
+// Reset
+@import "materialize-css/sass/components/normalize";
+
+// components
+@import "materialize-css/sass/components/global";
+@import "materialize-css/sass/components/grid";
+@import "materialize-css/sass/components/transitions";
+@import "materialize-css/sass/components/buttons";
+@import "materialize-css/sass/components/dropdown";
+
+@import 'materialize-css/sass/components/forms/forms';
+
 html{
     height: 100%;
     font-size: 100%;
@@ -19,7 +38,7 @@ html, root:root{
 
 
 body {
-    background-color: #f6eff6;
+    background-color: rgb(231, 214, 237);
     margin: 0 0;
 }
 
@@ -44,12 +63,11 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-
 :root {
     --coupleName:#3a013c9e;
     --menu: #F0BDA0;
     --content: #F0BDA0;
-    --title-text-color: #F0BDA0;
+    --title-text-color: #3a013cd6;
     --main: #3a013c9e;
     --body: #21201F;
     --formBorder: rgba(255,255,255,0.08);
@@ -65,3 +83,7 @@ body {
     --title-font-family: 'Alice';
     --name-font-family: 'RosansSans-Regular';
 }
+
+
+
+ 

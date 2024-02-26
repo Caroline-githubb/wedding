@@ -157,3 +157,68 @@ p {
   text-align: center;
 }
 
+.page-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgb(231, 214, 237);
+}
+
+.title {
+  width: 100%;
+  padding: 20px 15px;
+}
+
+.bemvindo {
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--title-text-color);
+  font-family: var(--title-font-family);
+  text-transform: none;
+  line-height: 46.7px;
+}
+
+.subtitle {
+  width: 100%;
+  min-height: 70px;
+  height: 100%;
+  padding: 20px 15px;
+}
+
+.subtitleh2 {
+  font-size: 14px;
+  font-weight: 400;
+  font-stretch: normal;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  letter-spacing: 2px;
+  line-height: 28px;
+  color:#3a013c;
+  text-transform: none;
+  max-width: 1110px;
+  margin: 0px auto;
+}
+
+.derPWs {
+  width: 100%;
+  padding: 40px 0px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.dFPibt {
+  display: flex;
+  fill:#07481d;
+}
+
+

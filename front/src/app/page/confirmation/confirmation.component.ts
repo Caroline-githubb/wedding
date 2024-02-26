@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
 const MAX_ADULT = 5;
 const MAX_CHILD = 10;
 
-const initArray = function (arrayQuantity: number) {
-  return Array(arrayQuantity).fill(undefined).map((x, i) => i + 1);
+const initArray = function (arrayQuantity: number, start_from: number) {
+  return Array(arrayQuantity).fill(undefined).map((x, i) => i + start_from);
 }
 
 @Component({
@@ -15,13 +15,13 @@ const initArray = function (arrayQuantity: number) {
 })
 export class ConfirmationComponent {
 
-  adultItens = initArray(MAX_ADULT);
-  childItens = initArray(MAX_CHILD);
+  adultItens = initArray(MAX_ADULT, 1);
+  childItens = initArray(MAX_CHILD, 0);
 
   fullName?: string;
   answer?: boolean;
   adultQuantity: number = 1;
-  childQuantity: number = 1;
+  childQuantity: number = 0;
   email?: string;
   phone?: string;
   obs?: string;
@@ -48,8 +48,8 @@ export class ConfirmationComponent {
     });
   }
 
-  initNewArray(arrayQuantity: number) {
-    return initArray(arrayQuantity);
+  initNewArray(arrayQuantity: number, start_from: number) {
+    return initArray(arrayQuantity, start_from);
   }
 
 }
