@@ -1,7 +1,11 @@
-MERCADO_PAGO_ACCESS_TOKEN=$1
+#!/bin/bash
+
+cert_password=$1
 
 docker run \
-    -e MERCADO_PAGO_ACCESS_TOKEN=$MERCADO_PAGO_ACCESS_TOKEN \
-    -p 8080:8080 \
     -p 8443:8443 \
-    casamentocarolerodrigo
+    -p 8080:8080 \
+    -e MERCADO_PAGO_ACCESS_TOKEN=abc \
+    -e CERT_PASSWORD=$cert_password \
+    -e HTTPS_REDIRECT_PORT=443 \
+    casamentocarolerodrigo casamento

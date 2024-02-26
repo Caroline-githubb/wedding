@@ -22,7 +22,7 @@ RUN npm install
 RUN ng build
 
 ## container specs
-FROM openjdk:17 as server
+FROM openjdk:17-jdk-alpine as server
 
 ARG MERCADO_PAGO_ACCESS_TOKEN
 
