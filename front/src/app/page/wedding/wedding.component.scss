@@ -1,0 +1,283 @@
+.section-cerimonia-recepcao{
+  background: #beadc9;
+}
+
+.page-title-local {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.espaco-local {
+  width: 100%;
+  height: 80px;
+}
+
+.title-cerimonia-recepcao {
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--title-text-color);
+  font-family: var(--title-font-family);
+  text-transform: none;
+  line-height: 46.7px;
+}
+
+.subtitle-cerimonia-recepcao {
+  width: 100%;
+  min-height: 70px;
+  height: 100%;
+  padding: 20px 15px;
+}
+
+.subtitle-cerimonia-recepcaoh2  {
+  font-size: 14px;
+  font-weight: 400;
+  font-stretch: normal;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  letter-spacing: 2px;
+  line-height: 28px;
+  color:var(--title-text-color);
+  text-transform: uppercase;
+  max-width: 1110px;
+  margin: 0px auto;
+}
+
+.title-local {
+  width: 100%;
+  padding: 20px 15px;
+  margin-top: 50px;
+}
+
+
+.bOIGdh {
+  width: 100%;
+  height: 80px;
+}
+
+.derPWs {
+  width: 100%;
+  padding: 40px 0px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.dFPibt {
+  display: flex;
+  fill:#07481d;
+}
+
+
+.espaco-regiao-local {
+  max-width: 1110px;
+  margin: 0px auto;
+  padding: 40px;
+  border-radius: 0px;
+  background: #beadc9;
+}
+
+.regiao-local {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.regiao-imagem-local {
+  width: 270px;
+  margin-right: 40px;
+  height: fit-content;
+  border-radius: 0px;
+  overflow: hidden;
+  margin-bottom: inherit;
+}
+
+.imagem-local {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.dhTmok {
+  padding-top: 100%;
+  background-image: url(https://lh3.googleusercontent.com/p/AF1QipOVL_kiFzavynLMmNfaYbBwnktukxpk2LI2g856=s680-w680-h510);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+figure {
+  margin: 0;
+}
+
+.fOabds {
+  flex: 1 1 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.local {
+  font-family: var(--title-font-family);
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--title-text-color);
+  text-align: left;
+  margin-bottom: 20px;
+  text-transform: none;
+}
+
+.local-info {
+  font-family: var(--base-font-family);
+  font-size: 16px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: var(--content);
+  text-align: left;
+}
+
+.duvida-traje {
+  color: var(--base-font-family);
+  font-weight: bold;
+}
+
+.espaco-map {
+  width: 100%;
+  height: 40px;
+}
+
+.google-map {
+  position: relative;
+  max-width: 1110px;
+  width: 100%;
+}
+
+.endereco{
+  color: var(--base-font-family);
+  font-weight: 400;
+}
+  // .ir-para-mapa {
+  //   max-width: 1110px;
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: rgba(0, 0, 0, 0.4);
+  //   font-family: var(--base-font-family);
+  //   font-size: 14px;
+  //   font-weight: 400;
+  //   font-stretch: normal;
+  //   font-style: normal;
+  //   line-height: 2;
+  //   letter-spacing: normal;
+  //   text-align: center;
+  //   color: var(--title-text-color);
+  //   cursor: pointer;
+  //   display: flex;
+  //   -webkit-box-align: center;
+  //   align-items: center;
+  //   -webkit-box-pack: center;
+  //   justify-content: center;
+  //   opacity: 0;
+  //   transition: opacity 0.3s ease-in-out 0s;
+  // }
+
+iframe{
+  height: 400px;
+  max-width: 1110px;
+  width: 100%;
+}
+
+@media (max-width: 768px){
+  .espaco-local {
+    width: 100%;
+    height: 20px;
+  }
+  .title-cerimonia-recepcao  {
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    letter-spacing: normal;
+  }
+  .confirmacao-subtitleh2 {
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 400;
+    font-stretch: normal;
+  }
+
+  .subtitle-cerimonia-recepcao {
+    min-height: 64px;
+  }
+
+  .subtitle-cerimonia-recepcaoh2 {
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+  }
+
+  .espaco-regiao-local {
+    padding: 24px 15px 40px;
+  }
+
+  .regiao-local {
+    flex-direction: column;
+  }
+
+  .regiao-imagem-local {
+    width: 100%;
+    margin: 0px auto 40px;
+    height: fit-content;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+
+  .local {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    letter-spacing: normal;
+  }
+
+  .local-info{
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+    letter-spacing: normal;
+    font-style: normal;
+    line-height: 2;
+    text-align: center;
+  }
+
+  iframe {
+    height: 250px;
+  }
+
+  .endereco{
+    font-size: 14px;
+    color: var(--base-font-family);
+    font-weight: 400;
+  }
+
+}
+

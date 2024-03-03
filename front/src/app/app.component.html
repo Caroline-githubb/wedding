@@ -1,6 +1,18 @@
 <app-site-header></app-site-header>
 <main class="main">
-    <div>
-        <router-outlet></router-outlet>
-    </div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+  <section (click)="backTop()" data-testid="BackTop" class="BackTop"><svg width="24" height="24" viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg">
+      <g id="Icon-ArrowUp">
+        <g id="ArrowUpIcon">
+          <path id="Path" fill-rule="evenodd" clip-rule="evenodd"
+            d="M11.9494 9.33483L16.6667 14.2465C16.7778 14.3621 16.7778 14.5476 16.6667 14.6633C16.5556 14.7789 16.3775 14.7789 16.2664 14.6633L11.7503 9.96106L7.2341 14.6633C7.12303 14.7789 6.9449 14.7789 6.83383 14.6633C6.77934 14.6065 6.75 14.5302 6.75 14.456C6.75 14.3818 6.77724 14.3054 6.83383 14.2487L11.5512 9.33701C11.6601 9.22136 11.8404 9.22136 11.9494 9.33483Z">
+          </path>
+        </g>
+      </g>
+    </svg>
+    <p class="ReturnBackTop">Voltar ao topo</p>
+  </section>
 </main>

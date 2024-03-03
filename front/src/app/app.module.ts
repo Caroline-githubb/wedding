@@ -23,6 +23,7 @@ import { MercadoPagoCheckoutProComponent } from './component/mercado-pago-checko
 import { LoaddingDirective } from './directive/loadding.directive';
 import { TimerComponent } from './component/timer/timer.component';
 import { MaterialSelectDirective } from './directive/material-select.directive';
+import { environment } from '../environments/environment';
 
 export function tokenGetter() {
   return localStorage.getItem("access_token");
@@ -61,7 +62,7 @@ export function tokenGetter() {
     HttpClientModule,
     ApiModule.forRoot(() => {
       return new Configuration({
-        basePath: 'http://localhost:8080'
+        basePath: environment.backBaseUri
       })
     })
   ],

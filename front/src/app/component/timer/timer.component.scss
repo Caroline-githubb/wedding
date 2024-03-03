@@ -54,7 +54,7 @@
   margin-top: 4px;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 768px) {
   .countdown-title{
     padding: 0px 40px;
     font-size: 12px;
@@ -65,8 +65,8 @@
   }
 
   .countdown-saveTheDate-dateInfo{
-    width: 30px;
-    height: 20px;
+    width: 100%;
+    height: 50px;
   }
 
   .countdown-Days{
@@ -76,6 +76,8 @@
     font-weight: 400;
     font-stretch: normal;
     letter-spacing: normal;
+    margin-top: auto;
+    text-align: center;
   }
 
 }

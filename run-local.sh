@@ -3,6 +3,7 @@
 cert_password=$1
 
 docker run \
+    -d --restart unless-stopped \
     -p 8443:8443 \
     -p 8080:8080 \
     -e MERCADO_PAGO_ACCESS_TOKEN=abc \

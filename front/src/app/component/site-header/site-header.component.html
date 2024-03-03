@@ -1,20 +1,31 @@
 <header class="header">
   <div class="header-div">
+
     <nav class="Menu">
-      <button *ngIf="innerWidth <= 430"  color="#ffffff" (click)="abrirMenu()">
+      <button *ngIf="innerWidth <= 768" color="#ffffff" (click)="abrirMenu()">
         <span class="menu-item-mobile"></span>
       </button>
-      <ul *ngIf="innerWidth > 430" id="nav-mobile" class="menu-wrapper">
+      <ul *ngIf="innerWidth > 768" id="nav-mobile" class="menu-wrapper">
         <li><a [routerLink]="['/']" aria-current="page" class="menu-item"><b>Home</b></a></li>
-        <li><a [routerLink]="['/wedding']" class="menu-item"><b>Local</b></a></li>
+        <li><a [routerLink]="['/wedding']" class="menu-item"><b>Cerimônia e Recepção</b></a></li>
         <li><a [routerLink]="['/confirmation']" class="menu-item"><b>Confirmar Presença</b></a></li>
         <li><a [routerLink]="['/gifts']" class="menu-item"><b>Lista de Presentes</b></a></li>
-        <li><a *ngIf="!IsLogged" [routerLink]="['/login']" class="menu-item"><b>Login</b></a></li>
+        <!-- <li><a *ngIf="!IsLogged" [routerLink]="['/login']" class="menu-item"><b>Login</b></a></li> -->
         <li><a *ngIf="IsAdmin" [routerLink]="['/admin']" class="menu-item"><b>Admin</b></a></li>
       </ul>
     </nav>
   </div>
 </header>
-<div class="menu-mobile off" #menu >
-
+<div class="menu-mobile off" #menu>
+  <div>
+    <a data-testid="CoupleNameHeader" class="iniciais-menu-mobile"
+    href="/rodrigoecarol2024/home">C & R
+    </a>
+  </div>
+  <div><a [routerLink]="['/']" aria-current="page" class="menu-item"><b>Home</b></a></div>
+  <div><a [routerLink]="['/wedding']" class="menu-item"><b>Cerimônia e Recepção</b></a></div>
+  <div><a [routerLink]="['/confirmation']" class="menu-item"><b>Confirmar Presença</b></a></div>
+  <div><a [routerLink]="['/gifts']" class="menu-item"><b>Lista de Presentes</b></a></div>
+  <!-- <li><a *ngIf="!IsLogged" [routerLink]="['/login']" class="menu-item"><b>Login</b></a></li> -->
+  <div><a *ngIf="IsAdmin" [routerLink]="['/admin']" class="menu-item"><b>Admin</b></a></div>
 </div>

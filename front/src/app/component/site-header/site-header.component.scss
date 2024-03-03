@@ -1,29 +1,23 @@
 .header {
-    width: 95%;
-    position: fixed;
-    transition: background 0.5s ease 0s;
-    z-index: 100;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0);
-    border-bottom: 1px solid rgba(240, 189, 160, 0);
-    font: inherit;
-    vertical-align: baseline;
-    right: 0;
+  width: 100%;
+  position: fixed;
+  padding: 0px 15px;
+  min-height: 99px;
+  transition: background 0.5s ease 0s;
+  z-index: 100;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background: rgb(231, 214, 237);
+  border-bottom: 1px solid #ba6fbf;
 }
 
 .header-div{
     width: 100%;
     max-width: 1110px;
     margin: 0px auto;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    justify-content: right;
 }
 
 .iniciais{
@@ -93,9 +87,7 @@ button {
 
 .Menu {
     display: block;
-    position: absolute;
-    top:0;
-    right: 0;
+    float:right;
 }
 
 nav {
@@ -125,13 +117,38 @@ ul {
 .menu-item {
     margin-right: 20px;
     width: 100%;
-    font-size: 16px;   
-    display: inline-block;
+    font-size: 12px;
     font-weight: 400;
     letter-spacing: 1px;
     color: rgb(81, 55, 99);
-    display: inline-block;
     font-family: var(--name-font-family);
+    font-stretch: normal;
+    text-transform: uppercase;
+    font-style: normal;
+    line-height: normal;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    min-height: 48px;
+}
+
+@media (max-width: 768px) {
+  .header{
+    width: 100%;
+    position: fixed;
+    padding: 0px 15px;
+    min-height: 64px;
+    transition: background 0.5s ease 0s;
+    z-index: 100;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: rgb(231, 214, 237);
+    border-bottom: 1px solid #ba6fbf05;
+  }
 }
 
 li {
@@ -147,8 +164,24 @@ li {
     height: 100%;
     background-color: rgb(231, 214, 237);
     z-index: 999;
+    padding-left: 15px;
 }
 
 .menu-mobile.off {
     display: none;
+}
+
+.iniciais-menu-mobile {
+  font-size: 28px;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--name-font-family);
+  margin-top: 30px;
+  color:rgb(81, 55, 99);
+  font-style: normal;
+  font-weight: bold;
+  float: left;
 }

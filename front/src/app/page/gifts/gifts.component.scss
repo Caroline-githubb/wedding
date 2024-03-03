@@ -6,3 +6,167 @@
   // @extend .m6;
   // @extend .s12;
 }
+//overrides
+.espaco-lista-presente{
+  width: 100%;
+  height: 80px;
+}
+
+.lista-presente {
+  width: 100%;
+  padding: 20px 15px;
+  margin-top: 50px;
+}
+
+.lista-presente-title {
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--title-text-color);
+  font-family: var(--title-font-family);
+  text-transform: none;
+  line-height: 46.7px;
+}
+
+.lista-presente-subtitle {
+  width: 100%;
+  min-height: 70px;
+  height: 100%;
+  padding: 20px 15px;
+}
+
+.lista-presente-subtitleh2 {
+  font-size: 14px;
+  font-weight: 400;
+  font-stretch: normal;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  letter-spacing: 2px;
+  line-height: 28px;
+  color:var(--title-text-color);
+  text-transform: none;
+  max-width: 1110px;
+  margin: 0px auto;
+}
+
+.dFPibt {
+  display: flex;
+  fill:#07481d;
+}
+
+.espaco-store{
+  width: 100%;
+  max-width: 1280px;
+  padding: 0px 15px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.derPWs {
+  width: 100%;
+  padding: 40px 0px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.eQjlNR {
+  max-width: 1110px;
+  width: 100%;
+}
+
+.store-products {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, 255px);
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.card-title{
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #140114;
+  font-family: var(--title-font-family);
+  text-transform: none;
+  line-height: 46.7px;
+}
+
+.shop-item-price{
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #140114;
+  font-family: var(--title-font-family);
+  text-transform: none;
+  line-height: 46.7px;
+}
+
+.card {
+  background-color: #f7cff9;
+}
+
+.btn{
+  background-color: #533653;
+  font-weight: 500;
+}
+
+.modal {
+  background: rgb(231, 214, 237);
+  max-height: 75%;
+}
+
+.open {
+  border-radius: 20px;
+}
+
+.modal .modal-footer {
+  background-color: rgb(231, 214, 237);
+}
+
+.btn-flat{
+  background-color: #533653;
+  font-weight: 500;
+  color:white;
+}
+
+.modal .modal-footer .btn-flat {
+  margin: 0 20px;
+}
+
+@media (max-width: 768px){
+  .espaco-lista-presente {
+    width: 100%;
+    height: 20px;
+  }
+  .lista-presente-title {
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    letter-spacing: normal;
+  }
+  .lista-presente-subtitleh2 {
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+  }
+}

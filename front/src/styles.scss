@@ -66,10 +66,10 @@ body {
 :root {
     --coupleName:#3a013c9e;
     --menu: #F0BDA0;
-    --content: #F0BDA0;
+    --content: #110112;
     --title-text-color: #3a013cd6;
     --main: #3a013c9e;
-    --body: #21201F;
+    --body: #020201;
     --formBorder: rgba(255,255,255,0.08);
     --lightBackground: #272625;
     --darkBackground: #1C1A19;
@@ -84,6 +84,12 @@ body {
     --name-font-family: 'RosansSans-Regular';
 }
 
+.dropdown-content li > a, .dropdown-content li > span {
+  font-size: 16px;
+  color: #ba6fbf;
+  display: block;
+  line-height: 22px;
+  padding: 14px 16px;
+}
 
 
- 

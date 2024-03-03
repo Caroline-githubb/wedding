@@ -24,7 +24,7 @@
 
             <label class="label_name" for="answer">Você irá ao evento</label>
             <div>
-              <label>
+              <label class="option">
                 <input class="input" name="answer" type="radio" id="answer_yes" [(ngModel)]="answer" [value]="true">
                 <span>
                   sim
@@ -32,7 +32,7 @@
               </label>
             </div>
             <div>
-              <label>
+              <label class="option">
                 <input class="input" name="answer" type="radio" id="answer_no" [(ngModel)]="answer" [value]="false">
                 <span>
                   não
@@ -78,6 +78,12 @@
             <textarea class="input w-input" name="obs" id="obs" [(ngModel)]="obs"></textarea>
 
             <input type="submit" class="btn w-button" value="Enviar" (click)="sendClick()">
+
+            <p class="duvidas">
+            Qualquer dúvida, entrar em contato com a Angela.
+            <br>
+            Contato: (16) 99741-4072
+            </p>
           </form>
         </div>
       </div>
