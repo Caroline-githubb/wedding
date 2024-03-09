@@ -5,12 +5,10 @@ import br.com.casamento.carolerodrigo.back.model.Confirmation;
 import br.com.casamento.carolerodrigo.back.repository.ConfirmationRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
+import java.util.List;
 
 @RestController
 @RequestMapping("/confirmation")
@@ -26,5 +24,10 @@ public class ConfirmationController {
         Confirmation confirmation = modelMapper.map(request, Confirmation.class);
         this.confirmationRepository.confirm(confirmation);
     }
+
+//    @GetMapping("/")
+//    public List<Confirmation> getAll() {
+//        return this.confirmationRepository.getAll();
+//    }
 
 }

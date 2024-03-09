@@ -4,12 +4,14 @@ import br.com.casamento.carolerodrigo.back.model.Present;
 import br.com.casamento.carolerodrigo.back.repository.PresentRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.Arrays;
+import java.util.List;
 
-@Repository
+
 public class MockPresentRepository implements PresentRepository {
     @Override
-    public Present[] findAllAvailable() {
-        return new Present[] {
+    public List<Present> findAllAvailable() {
+        return Arrays.stream(new Present[] {
                 Present.builder()
                         .name("fogao daco é bom")
                         .value(250.59)
@@ -22,6 +24,6 @@ public class MockPresentRepository implements PresentRepository {
                         .name("passarinho que nao canta")
                         .value(5999.98)
                         .build()
-        };
+        }).toList();
     }
 }

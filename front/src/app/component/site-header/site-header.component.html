@@ -1,4 +1,4 @@
-<header class="header">
+<header id="header" (scroll)="aparecerMenu()">
   <div class="header-div">
 
     <nav class="Menu">
@@ -16,7 +16,7 @@
     </nav>
   </div>
 </header>
-<div class="menu-mobile off" #menu>
+<div class="menu-mobile off" #menu (click)="abrirMenu()">
   <div>
     <a data-testid="CoupleNameHeader" class="iniciais-menu-mobile"
     href="/rodrigoecarol2024/home">C & R

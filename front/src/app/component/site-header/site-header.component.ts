@@ -34,10 +34,18 @@ export class SiteHeaderComponent {
   }
 
   abrirMenu() {
-    if (this.menu?.nativeElement.classList.contains('off')) 
+    if (this.menu?.nativeElement.classList.contains('off'))
       this.renderer2.removeClass(this.menu?.nativeElement, "off");
     else
       this.renderer2.addClass(this.menu?.nativeElement, "off");
   }
 
+  @HostListener('window:scroll', ['$event'])
+  aparecerMenu() {
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector('#header');
+      header?.classList.toggle('rolagem', this.window.scrollY > 0);
+    });
+  }
 }
+

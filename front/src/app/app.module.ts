@@ -24,6 +24,7 @@ import { LoaddingDirective } from './directive/loadding.directive';
 import { TimerComponent } from './component/timer/timer.component';
 import { MaterialSelectDirective } from './directive/material-select.directive';
 import { environment } from '../environments/environment';
+import { ModalConfirmacaoPresencaComponent } from './modal-confirmacao-presenca/modal-confirmacao-presenca.component';
 
 export function tokenGetter() {
   return localStorage.getItem("access_token");
@@ -47,6 +48,7 @@ export function tokenGetter() {
     LoaddingDirective,
     TimerComponent,
     MaterialSelectDirective,
+    ModalConfirmacaoPresencaComponent,
   ],
   imports: [
     BrowserModule,

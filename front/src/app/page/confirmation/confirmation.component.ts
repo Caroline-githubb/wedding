@@ -41,9 +41,11 @@ export class ConfirmationComponent {
       obs: this.obs,
       adultsNames: this.adultsNames.filter((x, i) => i < this.adultQuantity - 1),
       childrenNames: this.childrenNames.filter((x, i) => i < this.childQuantity - 1)
+
     }).subscribe({
       complete: () => {
         console.log("sucesso");
+        alert('Confirmação enviada com sucesso!');
       }
     });
   }

@@ -1,12 +1,10 @@
 #!/bin/bash
 
-cert_password=$1
+env_file=$1
 
 docker run \
     -d --restart unless-stopped \
     -p 8443:8443 \
     -p 8080:8080 \
-    -e MERCADO_PAGO_ACCESS_TOKEN=abc \
-    -e CERT_PASSWORD=$cert_password \
-    -e HTTPS_REDIRECT_PORT=443 \
+    --env-file "$env_file" \
     casamentocarolerodrigo casamento

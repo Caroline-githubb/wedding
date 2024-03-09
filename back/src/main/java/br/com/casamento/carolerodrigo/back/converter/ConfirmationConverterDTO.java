@@ -18,22 +18,23 @@ public class ConfirmationConverterDTO implements Converter<ConfirmationRequest, 
     public Confirmation convert(MappingContext<ConfirmationRequest, Confirmation> mappingContext) {
         ConfirmationRequest request = mappingContext.getSource();
         Confirmation confirmation = modelMapper.map(request, Confirmation.class);
+        confirmation.setType("A");
 
         confirmation.setAdultsNames(Arrays
                         .stream(request.getAdultsNames())
                         .map(x -> Confirmation.builder()
                                 .fullName(x)
+                                .type("A")
                                 .build())
-                        .toList()
-                        .toArray(new Confirmation[0]));
+                        .toList());
 
         confirmation.setChildrenNames(Arrays
                 .stream(request.getChildrenNames())
                 .map(x -> Confirmation.builder()
                         .fullName(x)
+                        .type("C")
                         .build())
-                .toList()
-                .toArray(new Confirmation[0]));
+                .toList());
 
         return confirmation;
     }
