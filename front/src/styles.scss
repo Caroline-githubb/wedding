@@ -16,6 +16,7 @@
 @import "materialize-css/sass/components/transitions";
 @import "materialize-css/sass/components/buttons";
 @import "materialize-css/sass/components/dropdown";
+@import "materialize-css/sass/components/modal";
 
 @import 'materialize-css/sass/components/forms/forms';
 
@@ -91,5 +92,18 @@ body {
   line-height: 22px;
   padding: 14px 16px;
 }
+
+$placeholder-text-color: #a3a3a3 !default;
+
+
+.modal .modal-content {
+  padding: 0px; 
+}
+
+.z-depth-5 {
+  background-color: rgb(231, 214, 237);
+  border-radius: 20px;
+}
+
 
 

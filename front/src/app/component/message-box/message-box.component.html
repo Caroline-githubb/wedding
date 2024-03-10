@@ -1,0 +1,17 @@
+<app-modal-skeleton>
+  <header>
+    <p class="title {{getStateClass()}}">
+      {{ title }}
+    </p>
+  </header>
+  <content>
+    <p class="message">
+      {{ message }}
+    </p>
+  </content>
+  <footer>
+    <span *ngFor="let button of buttonsEnableds">
+      <button class="waves-effect waves-green btn-flat btn-modal" (click)="close(button.value)" *ngIf="isButtonVisible(button.value)">{{ button.text }}</button>
+    </span>
+  </footer>
+</app-modal-skeleton>

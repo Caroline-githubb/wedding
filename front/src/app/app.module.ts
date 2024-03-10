@@ -25,6 +25,9 @@ import { TimerComponent } from './component/timer/timer.component';
 import { MaterialSelectDirective } from './directive/material-select.directive';
 import { environment } from '../environments/environment';
 import { ModalConfirmacaoPresencaComponent } from './modal-confirmacao-presenca/modal-confirmacao-presenca.component';
+import { ModalComponent } from './component/modal/modal.component';
+import { ModalSkeletonComponent } from './component/modal-skeleton/modal-skeleton.component';
+import { MessageBoxComponent } from './component/message-box/message-box.component';
 
 export function tokenGetter() {
   return localStorage.getItem("access_token");
@@ -49,6 +52,9 @@ export function tokenGetter() {
     TimerComponent,
     MaterialSelectDirective,
     ModalConfirmacaoPresencaComponent,
+    ModalComponent,
+    ModalSkeletonComponent,
+    MessageBoxComponent,
   ],
   imports: [
     BrowserModule,

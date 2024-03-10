@@ -18,7 +18,7 @@ RUN npm install -g @angular/cli
 
 COPY front .
 
-RUN npm install
+RUN npm install --force
 RUN ng build
 
 ## container specs

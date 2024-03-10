@@ -1,3 +1,5 @@
+import { MessageBoxType } from '../../component/message-box/message-box.component';
+import { ModalService } from '../../component/modal/modal.service';
 import { WeddingService } from '../../service/wedding.service';
 import { Component } from '@angular/core';
 
@@ -30,6 +32,7 @@ export class ConfirmationComponent {
 
   constructor(
     private weddingService: WeddingService,
+    private modalService: ModalService,
   ) { }
 
   sendClick(): void {
@@ -44,8 +47,11 @@ export class ConfirmationComponent {
 
     }).subscribe({
       complete: () => {
-        console.log("sucesso");
-        alert('Confirmação enviada com sucesso!');
+        this.modalService.openMessageBox({
+          title: "Confirmação enviada",
+          message: "Obrigado por enviar a sua confirmação de presença e fazer parte desse dia tão especial para nós",
+          type: MessageBoxType.SUCCESS
+        })
       }
     });
   }

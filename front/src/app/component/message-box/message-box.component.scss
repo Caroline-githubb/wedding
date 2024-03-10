@@ -1,0 +1,34 @@
+.title {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.message {
+  margin: 0 15px;
+}
+
+.error {
+  color: #a70000;
+}
+
+.success {
+  color: var(--title-text-color);
+}
+
+.btn-modal {
+  color: white;
+  font-weight: bold;
+  background-color: #533653;
+}
+
+.warning {
+  color: #ffd500
+}
+
+.info {
+  color: #005b96;
+}
+
+.question {
+  color: #ff7400;
+}
