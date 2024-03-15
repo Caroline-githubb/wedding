@@ -29,7 +29,7 @@ export class GiftsComponent {
 
   openResume(selectedPresent: Present) {
     this.modalService.openMessageBox({
-      message: "Ainda não terminaos os sistema de pagamentos. Logo estará tudo pronto.",
+      message: "Ainda não terminamos o sistema de pagamentos. Logo estará tudo pronto.",
       title: "Aguardem",
       type: MessageBoxType.INFO,
     })

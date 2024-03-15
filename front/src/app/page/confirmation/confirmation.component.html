@@ -20,12 +20,12 @@
           <form id="email-form" name="email-form" method="get">
             <label class="label_name" for="full_name">Nome completo</label>
             <input class="input w-input" maxlength="256" name="full_name" placeholder="Insira seu nome completo"
-              type="text" id="full_name" [(ngModel)]="fullName">
+              type="text" id="full_name" [(ngModel)]="confirmation.fullName">
 
             <label class="label_name" for="answer">Você irá ao evento</label>
             <div>
               <label class="option">
-                <input class="input" name="answer" type="radio" id="answer_yes" [(ngModel)]="answer" [value]="true">
+                <input class="input" name="answer" type="radio" id="answer_yes" [(ngModel)]="confirmation.answer" [value]="true">
                 <span>
                   sim
                 </span>
@@ -33,7 +33,7 @@
             </div>
             <div>
               <label class="option">
-                <input class="input" name="answer" type="radio" id="answer_no" [(ngModel)]="answer" [value]="false">
+                <input class="input" name="answer" type="radio" id="answer_no" [(ngModel)]="confirmation.answer" [value]="false">
                 <span>
                   não
                 </span>
@@ -49,8 +49,8 @@
 
             <div *ngFor="let item of initNewArray(adultQuantity - 1, 1); let i=index">
               <label [for]="'adultName' + (i + 2)">Adulto {{ i + 2 }}</label>
-              <input class="input w-input" maxlength="256" [name]="'adultName' + (i + 2)"
-                [placeholder]="'Nome completo do adulto ' + (i + 2)" type="text" [(ngModel)]="adultsNames[i]">
+              <input *ngIf="confirmation.adultsNames" class="input w-input" maxlength="256" [name]="'adultName' + (i + 2)"
+                [placeholder]="'Nome completo do adulto ' + (i + 2)" type="text" [(ngModel)]="confirmation.adultsNames[i]">
             </div>
 
             <div>
@@ -62,26 +62,27 @@
 
             <div *ngFor="let item of initNewArray(childQuantity, 0); let i=index">
               <label [for]="'childName' + (i + 1)">Criança {{ i + 1 }}</label>
-              <input class="input w-input" maxlength="256" [name]="'childName' + (i + 2)"
-                [placeholder]="'Nome completo da crinaça ' + (i + 2)" type="text" [(ngModel)]="childrenNames[i]">
+              <input *ngIf="confirmation.childrenNames" class="input w-input" maxlength="256" [name]="'childName' + (i + 2)"
+                [placeholder]="'Nome completo da criança ' + (i + 1)" type="text" [(ngModel)]="confirmation.childrenNames[i]">
             </div>
 
             <label class="label_name" for="email">E-mail</label>
             <input class="input w-input" maxlength="256" name="email" placeholder="exemplo@email.com" type="text"
-              id="email" [(ngModel)]="email">
+              id="email" [(ngModel)]="confirmation.email">
 
             <label class="label_name" for="phone">Telefone para contato</label>
             <input class="input w-input" maxlength="256" name="phone" placeholder="(16) 99999-9999" type="text"
-              id="phone" [(ngModel)]="phone">
+              id="phone" [(ngModel)]="confirmation.phone">
 
             <label class="label_name" for="obs">Observações</label>
-            <textarea class="input w-input" name="obs" id="obs" [(ngModel)]="obs"></textarea>
+            <textarea class="input w-input" name="obs" id="obs" [(ngModel)]="confirmation.obs"></textarea>
 
             <input type="submit" class="btn w-button" value="Enviar" (click)="sendClick()">
 
             <p class="duvidas">
             Qualquer dúvida, entrar em contato com a Angela pelo número (16) 99741-4072
             </p>
+
           </form>
         </div>
       </div>
