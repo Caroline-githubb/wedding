@@ -18,11 +18,13 @@ public class MercadoPagoWebHookEntity {
     String date_created;
     String live_mode;
     String user_id;
-    Data data;
+    MercadoPagoData data;
 
-    @lombok.Data
+    @Data
     @Builder
-    public static class Data {
+    @AllArgsConstructor
+    @NoArgsConstructor
+    public static class MercadoPagoData {
         long id;
     }
 

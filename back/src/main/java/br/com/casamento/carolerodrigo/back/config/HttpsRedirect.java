@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 
 import java.util.Optional;
 
@@ -29,6 +30,7 @@ public class HttpsRedirect {
     private Optional<Integer> httpsRedirectPort = Optional.empty();
 
     @Bean
+    @Profile("deploy")
     public TomcatServletWebServerFactory servletContainer() {
         TomcatServletWebServerFactory tomcat =
                 new TomcatServletWebServerFactory() {

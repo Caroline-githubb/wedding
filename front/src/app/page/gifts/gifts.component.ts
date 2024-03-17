@@ -28,17 +28,9 @@ export class GiftsComponent {
   }
 
   openResume(selectedPresent: Present) {
-    this.modalService.openMessageBox({
-      message: "Ainda não terminamos o sistema de pagamentos. Logo estará tudo pronto.",
-      title: "Aguardem",
-      type: MessageBoxType.INFO,
-    })
-  }
-
-  openResumeReal(selectedPresent: Present) {
     this.modalService.open(GiftResumeComponent, {
       present: selectedPresent
-    }).afterClosed.subscribe((gift: Gift) => { 
+    }).afterClosed.subscribe((gift: Gift) => {
       if (gift) {
         this.weddingService.gift(gift).subscribe(response => {
           if (response.preferenceId) {

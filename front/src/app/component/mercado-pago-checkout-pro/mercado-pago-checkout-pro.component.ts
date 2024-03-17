@@ -1,5 +1,6 @@
 import { Component, Inject, Input, OnInit } from '@angular/core';
 import { MODAL_DATA } from '../modal/modal.component';
+import { environment } from '../../../environments/environment';
 
 declare var MercadoPago: any;
 
@@ -17,7 +18,7 @@ export class MercadoPagoCheckoutProComponent implements OnInit {
   constructor(
     @Inject(MODAL_DATA) private data: any,
   ) {
-    this.mp = new MercadoPago('TEST-9c9661d7-501c-4df5-b0f1-d58d4e10682b');
+    this.mp = new MercadoPago(environment.MERCADO_PAGO_PUBLIC_KEY);
     this.bricksBuilder = this.mp.bricks();
   }
 

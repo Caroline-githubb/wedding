@@ -3,7 +3,6 @@ package br.com.casamento.carolerodrigo.back.service;
 import br.com.casamento.carolerodrigo.back.model.Gift;
 import br.com.casamento.carolerodrigo.back.repository.GiftRepository;
 import com.mercadopago.client.payment.PaymentClient;
-import com.mercadopago.client.preference.PreferenceBackUrlsRequest;
 import com.mercadopago.client.preference.PreferenceClient;
 import com.mercadopago.client.preference.PreferenceItemRequest;
 import com.mercadopago.client.preference.PreferenceRequest;
@@ -15,7 +14,6 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -51,25 +49,17 @@ public class MercadoPagoService {
         }
     }
 
-    public String isPaymentPayed(long idPagamento) {
+    public Payment getPayment(long id) {
         try {
             PaymentClient client = new PaymentClient();
-            Payment payment = client.get(idPagamento);
-
-            giftRepository.findByItem(UUID.fromString(payment.getExternalReference())).ifPresent(gift -> {
-                if ("approved".equals(payment.getStatus()))
-                    gift.setStatus("payed");
-
-                gift.setMercado_pago_id_payment(idPagamento);
-
-                giftRepository.save(gift);
-            });
-
-            return "NAO";
+            return client.get(id);
         } catch (Exception e) {
             return null;
         }
+    }
 
+    public boolean isPaymentPayed(Payment payment) {
+        return "approved".equals(payment.getStatus());
     }
 
 }
