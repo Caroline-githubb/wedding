@@ -29,4 +29,4 @@ ARG MERCADO_PAGO_ACCESS_TOKEN
 COPY --from=build-back /workspace/back/target/back-*-SNAPSHOT.jar app.jar
 COPY --from=build-front /workspace/front/dist/front/browser static
 
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","/app.jar", "-Dspring.profiles.active=deploy"]
