@@ -15,7 +15,9 @@ export class TimerComponent implements OnInit{
 
   public restante?: Duration;
 
-  constructor() {}
+  constructor() {
+    this.atualizarRestante();
+  }
 
   ngOnInit() {
     interval(1000)

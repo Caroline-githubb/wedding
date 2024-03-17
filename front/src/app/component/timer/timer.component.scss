@@ -32,6 +32,7 @@
   border-radius: 10px;
   padding: 12px;
   width: 80px;
+  min-height: 100px;
   background-color: #604E5D;
 }
 
@@ -65,8 +66,9 @@
   }
 
   .countdown-saveTheDate-dateInfo{
-    width: 100%;
+    width: 50px;
     height: 50px;
+    min-height: 50px;
   }
 
   .countdown-Days{
