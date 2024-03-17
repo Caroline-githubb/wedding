@@ -4,6 +4,11 @@
 @import "materialize-css/sass/components/color-variables";
 @import "materialize-css/sass/components/color-classes";
 
+$placeholder-text-color: #a3a3a3 !default;
+$secondary-color: #533653 !default;
+$button-raised-background: #533653 !default;
+$button-floating-background: #533653 !default;
+
 // Variables;
 @import "materialize-css/sass/components/variables";
 
@@ -14,6 +19,7 @@
 @import "materialize-css/sass/components/global";
 @import "materialize-css/sass/components/grid";
 @import "materialize-css/sass/components/transitions";
+@import "materialize-css/sass/components/cards";
 @import "materialize-css/sass/components/buttons";
 @import "materialize-css/sass/components/dropdown";
 @import "materialize-css/sass/components/modal";
@@ -93,17 +99,17 @@ body {
   padding: 14px 16px;
 }
 
-$placeholder-text-color: #a3a3a3 !default;
-
-
-.modal .modal-content {
-  padding: 0px; 
-}
-
 .z-depth-5 {
   background-color: rgb(231, 214, 237);
   border-radius: 20px;
 }
 
+.btn {
+  background-color: #533653;
+  font-weight: 500;
+}
 
-
+.modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-small, .modal .modal-footer .btn-flat {
+  color: #fff;
+  margin: 6px 2px;
+}

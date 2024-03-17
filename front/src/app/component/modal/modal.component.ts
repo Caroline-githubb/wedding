@@ -28,13 +28,14 @@ export class ModalComponent<T = any> implements AfterViewInit {
   constructor(
     private injector: Injector
   ) {
-    
+
   }
   ngAfterViewInit(): void {
     this.materialModalInstance = M.Modal.init(this.modal?.nativeElement, {
       onCloseEnd: () => { this.afterClosed.emit(); }
     });
     this.onCompleteLoad.emit();
+    M.updateTextFields();
   }
 
   public open() {

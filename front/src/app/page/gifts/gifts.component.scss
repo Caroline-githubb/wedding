@@ -1,13 +1,14 @@
-// @use 'materialize-css' as *;
+@use '../../../styles.scss' as *;
 
-// .item {
-//   @extend .col;
-//   @extend .l4;
-//   // @extend .m6;
-//   // @extend .s12;
-// }
+.item {
+  @extend .col;
+  @extend .l4;
+  // @extend .m6;
+  // @extend .s12;
+}
+
 //overrides
-.espaco-lista-presente{
+.espaco-lista-presente {
   width: 100%;
   height: 80px;
 }
@@ -47,7 +48,7 @@
   font-style: normal;
   letter-spacing: 2px;
   line-height: 28px;
-  color:var(--title-text-color);
+  color: var(--title-text-color);
   text-transform: none;
   max-width: 1110px;
   margin: 0px auto;
@@ -55,10 +56,10 @@
 
 .dFPibt {
   display: flex;
-  fill:#07481d;
+  fill: #07481d;
 }
 
-.espaco-store{
+.espaco-store {
   width: 100%;
   max-width: 1280px;
   padding: 0px 15px;
@@ -92,7 +93,7 @@
   justify-content: center;
 }
 
-.card-title{
+.card-title {
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
@@ -105,7 +106,7 @@
   line-height: 46.7px;
 }
 
-.shop-item-price{
+.shop-item-price {
   font-size: 16px;
   font-weight: bold;
   font-stretch: normal;
@@ -122,11 +123,6 @@
   background-color: #f7cff9;
 }
 
-.btn{
-  background-color: #533653;
-  font-weight: 500;
-}
-
 .modal {
   background: rgb(231, 214, 237);
   max-height: 75%;
@@ -140,10 +136,10 @@
   background-color: rgb(231, 214, 237);
 }
 
-.btn-flat{
+.btn-flat {
   background-color: #533653;
   font-weight: 500;
-  color:white;
+  color: white;
 }
 
 // .modal .modal-footer .btn-flat {
@@ -151,11 +147,12 @@
 // }
 
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .espaco-lista-presente {
     width: 100%;
     height: 20px;
   }
+
   .lista-presente-title {
     line-height: normal;
     font-size: 20px;
@@ -163,6 +160,7 @@
     font-stretch: normal;
     letter-spacing: normal;
   }
+
   .lista-presente-subtitleh2 {
     line-height: 20px;
     letter-spacing: 2px;
